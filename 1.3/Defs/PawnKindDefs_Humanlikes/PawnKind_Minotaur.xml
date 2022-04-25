@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--__________ Pawnkinds __________-->
+
+	<!-- Minotaur Tribesman -->
+
+	<PawnKindDef>
+		<defName>ESCP_Minotaur_Tribesman</defName>
+		<label>Minotaur Tribesman</label>
+		<race>ESCP_MinotaurRace</race>
+		<trader>false</trader>
+		<backstoryFiltersOverride>
+		<li>
+			<categories>
+		  		<li>ESCP_MinotaurBackstory</li>
+				<li>ESCP_MinotaurChildBackstory</li>
+			</categories>
+		</li>
+		</backstoryFiltersOverride>	
+		<combatPower>45</combatPower>
+		<baseRecruitDifficulty>0.65</baseRecruitDifficulty>
+		<isFighter>true</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelTags>
+			<!-- <li>ESCP_Minotaur_Apparel</li> -->
+		</apparelTags>
+		<weaponTags>
+      		<li>MedievalMeleeBasic</li>
+		</weaponTags>
+		<apparelMoney>350~600</apparelMoney>
+		<weaponMoney>500~500</weaponMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsChance>0</techHediffsChance>
+		<techHediffsMoney>
+			<min>0</min>
+			<max>0</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>	
+	</PawnKindDef>
+
+	<!-- Minotaur Warrior -->
+
+	<PawnKindDef>
+		<defName>ESCP_Minotaur_Warrior</defName>
+		<label>Minotaur Warrior</label>
+		<race>ESCP_MinotaurRace</race>
+		<trader>false</trader>
+		<backstoryFiltersOverride>
+		<li>
+			<categories>
+		  		<li>ESCP_MinotaurWarriorBackstory</li>
+				<li>ESCP_MinotaurChildBackstory</li>
+			</categories>
+		</li>
+		</backstoryFiltersOverride>	
+		<combatPower>45</combatPower>
+		<baseRecruitDifficulty>0.65</baseRecruitDifficulty>
+		<isFighter>true</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelTags>
+			<!-- <li>ESCP_Minotaur_Armor</li> -->
+			<!-- <li>ESCP_Minotaur_Apparel</li> -->
+		</apparelTags>
+		<weaponTags>
+      		<li>MedievalMeleeBasic</li>
+      		<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<apparelMoney>350~600</apparelMoney>
+		<weaponMoney>500~500</weaponMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsChance>0</techHediffsChance>
+		<techHediffsMoney>
+			<min>0</min>
+			<max>0</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>	
+	</PawnKindDef>
+
+	<!-- Minotaur Leader -->
+
+	<PawnKindDef>
+		<defName>ESCP_Minotaur_Alpha</defName>
+		<label>Minotaur Alpha</label>
+    	<factionLeader>true</factionLeader>
+		<race>ESCP_MinotaurRace</race>
+		<trader>false</trader>
+		<backstoryFiltersOverride>
+		<li>
+			<categories>
+		  		<li>ESCP_MinotaurWarriorBackstory</li>
+				<li>ESCP_MinotaurChildBackstory</li>
+			</categories>
+		</li>
+		</backstoryFiltersOverride>	
+		<combatPower>60</combatPower>
+		<baseRecruitDifficulty>0.65</baseRecruitDifficulty>
+		<isFighter>true</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelTags>
+			<!-- <li>ESCP_Minotaur_Armor</li> -->
+			<!-- <li>ESCP_Minotaur_Apparel</li> -->
+		</apparelTags>
+		<weaponTags>
+      		<li>MedievalMeleeBasic</li>
+      		<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<apparelMoney>350~600</apparelMoney>
+		<weaponMoney>500~1000</weaponMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsChance>0</techHediffsChance>
+		<techHediffsMoney>
+			<min>0</min>
+			<max>0</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>	
+	</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--__________ Generic Adult __________-->
+
+	<!-- Minotaur Armorer -->
+
+	<AlienRace.BackstoryDef>
+		<defName>ESCP_Minotaur_ArmorerBackstory</defName>
+		<title>Armorer</title>
+		<titleShort>Armorer</titleShort>
+		<baseDescription>[PAWN_nameDef] has had to fashion what arms and armor they can for the good of the tribe.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<spawnCategories>
+		  <li>ESCP_MinotaurBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Crafting</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<disallowedTraits>
+		</disallowedTraits>
+		<workDisables>
+			<li>Animals</li>
+			<li>Caring</li>
+		</workDisables>
+		<forcedItems>
+		</forcedItems>
+	</AlienRace.BackstoryDef>	
+	
+	<!-- Minotaur Forager -->
+
+	<AlienRace.BackstoryDef>
+		<defName>ESCP_Minotaur_ForagerBackstory</defName>
+		<title>Forager</title>
+		<titleShort>Forager</titleShort>
+		<baseDescription>[PAWN_nameDef] spends lots of time in the wild, gathering what food and supplies they can scrounge up.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<spawnCategories>
+		  <li>ESCP_MinotaurBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Plants</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<disallowedTraits>
+		</disallowedTraits>
+		<workDisables>
+		</workDisables>
+		<forcedItems>
+		</forcedItems>
+		<forcedTraits>
+		</forcedTraits>
+		<forcedHediffs>
+		</forcedHediffs>
+	</AlienRace.BackstoryDef>
+	
+	<!-- Minotaur Craftsman -->
+
+	<AlienRace.BackstoryDef>
+		<defName>ESCP_Minotaur_CraftsmanBackstory</defName>
+		<title>Craftsman</title>
+		<titleShort>Craftsman</titleShort>
+		<baseDescription>[PAWN_nameDef] is a craftsman, knowing how to fix ruins and create items from scratch prooves invaluable to the tribe.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<spawnCategories>
+		  <li>ESCP_MinotaurBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Crafting</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<disallowedTraits>
+		</disallowedTraits>
+		<workDisables>
+		</workDisables>
+		<forcedItems>
+		</forcedItems>
+		<forcedHediffs>
+		</forcedHediffs>
+	</AlienRace.BackstoryDef>
+	
+	<!-- Minotaur Arena Fighter -->
+
+	<AlienRace.BackstoryDef>
+		<defName>ESCP_Minotaur_ArenaFighterBackstory</defName>
+		<title>Arena fighter</title>
+		<titleShort>Arena fighter</titleShort>
+		<baseDescription>[PAWN_nameDef] is a fighter of the arena in the Imperial City.[PAWN_pronoun] spent many hours a day fighting in the pit all the while enduring the hate of the gladiators fans.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<spawnCategories>
+			<li>ESCP_MinotaurWarriorBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>6</amount>
+			</li>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<disallowedTraits>
+		</disallowedTraits>
+		<workDisables>
+			<li>Social</li>
+			<li>Caring</li>
+			<li>Intellectual</li>
+		</workDisables>
+		<forcedItems>
+			<Silver>15~30</Silver>
+		</forcedItems>
+		<forcedHediffs>
+		</forcedHediffs>
+	</AlienRace.BackstoryDef>
+	
+	<!-- Minotaur Mercenary -->
+
+	<AlienRace.BackstoryDef>
+		<defName>ESCP_Minotaur_MercanaryBackstory</defName>
+		<title>Mercenary</title>
+		<titleShort>Mercenary</titleShort>
+		<baseDescription>[PAWN_nameDef] is a mercenary, though not many people trust them, [PAWN_nameDef] is always available to hire and will stay untill the job is done.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<spawnCategories>
+		  	<li>ESCP_MinotaurWarriorBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>5</amount>
+			</li>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<disallowedTraits>
+		</disallowedTraits>
+		<workDisables>
+		</workDisables>
+		<forcedItems>
+			<Silver>25~35</Silver>
+		</forcedItems>
+		<forcedHediffs>
+		</forcedHediffs>
+	</AlienRace.BackstoryDef>
+
+	<!-- Minotaur Warrior -->
+
+	<AlienRace.BackstoryDef>
+		<defName>ESCP_Minotaur_WarriorBackstory</defName>
+		<title>Warrior</title>
+		<titleShort>Warrior</titleShort>
+		<baseDescription>[PAWN_nameDef] is a warrior, and will defend the tribe till the bitter end</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<spawnCategories>
+		  	<li>ESCP_MinotaurWarriorBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>6</amount>
+			</li>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<disallowedTraits>
+		</disallowedTraits>
+		<workDisables>
+		</workDisables>
+		<forcedItems>
+		</forcedItems>
+		<forcedHediffs>
+		</forcedHediffs>
+	</AlienRace.BackstoryDef>
+
+	<!-- Minotaur Unicorn Defender -->
+	
+	<AlienRace.BackstoryDef>
+		<defName>ESCP_Minotaur_UnicornDefenderBackstory</defName>
+		<title>Unicorn Defender</title>
+		<titleShort>Unicorn Defender</titleShort>
+		<baseDescription>[PAWN_nameDef] is a Defender of the unicorns of Cyrodiil, no harm shall come to them when [PAWN_nameDef] is around.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<spawnCategories>
+		  <li>ESCP_MinotaurBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>1</amount>
+			</li>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<disallowedTraits>
+		</disallowedTraits>
+		<workDisables>
+			<li>Animals</li>
+		</workDisables>
+		<forcedItems>
+			<Silver>25~35</Silver>
+		</forcedItems>
+		<forcedHediffs>
+		</forcedHediffs>
+	</AlienRace.BackstoryDef>
+
+</Defs>

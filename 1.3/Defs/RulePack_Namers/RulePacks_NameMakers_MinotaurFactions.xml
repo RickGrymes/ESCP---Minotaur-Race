@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Tribes -->
+	
+	<RulePackDef>
+		<defName>ESCP_NamerSettlementMinotaurTribes</defName>
+		<include>
+		  <li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+		  <rulesStrings>
+			<li>r_name(p=1)->[Animal] [TerrainFeature]</li>
+		  </rulesStrings>
+		  <rulesFiles>
+		  </rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<!-- Raider Tribes -->
+	
+	<RulePackDef>
+		<defName>ESCP_NamerSettlementRaider</defName>
+		<rulePack>
+		  <rulesStrings>
+			<li>r_name(p=1)->[Color]-[Animal]</li>
+		  </rulesStrings>
+		  <rulesFiles>
+		  </rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Minotaur -->
+
+	<RulePackDef>
+		<defName>ESCP_NamerPersonMinotaurMale</defName>
+		<include>
+		  <li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[MaleList] [FamilyList_A][FamilyList_B]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>MaleList</keyword>
+					<path>ESCP_MinotaurNames/MinotaurMale</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>FamilyList_A</keyword>
+					<path>ESCP_MinotaurNames/MinotaurFamily_A</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>FamilyList_B</keyword>
+					<path>ESCP_MinotaurNames/MinotaurFamily_B</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>ESCP_NamerPersonMinotaurFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[FemaleList] [FamilyList_A][FamilyList_B]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>FemaleList</keyword>
+					<path>ESCP_MinotaurNames/MinotaurFemale</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>FamilyList_A</keyword>
+					<path>ESCP_MinotaurNames/MinotaurFamily_A</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>FamilyList_B</keyword>
+					<path>ESCP_MinotaurNames/MinotaurFamily_B</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+</Defs>

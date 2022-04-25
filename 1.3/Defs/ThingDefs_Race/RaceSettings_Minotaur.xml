@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.RaceSettings>
+		<defName>ESCP_Minotaur_Race_Settings</defName>
+
+		<backstoryTagInsertion>
+    		<li>
+				<backstories>
+					<li>ESCP_MinotaurBackstory</li>
+				</backstories>
+    		</li>
+		</backstoryTagInsertion>
+
+		<pawnKindSettings>
+			<alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>ESCP_Minotaur_Tribesman</li>
+					</kindDefs>
+					<chance>5.0</chance>
+				</li>
+			</alienslavekinds>
+
+			<alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>ESCP_Minotaur_Tribesman</li>
+					</kindDefs>
+					<chance>10.0</chance>
+				</li>
+			</alienrefugeekinds>
+
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>ESCP_Minotaur_Tribesman</li>
+							</kindDefs>
+							<chance>2.0</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>ESCP_Minotaur_Warrior</li>
+							</kindDefs>
+							<chance>1.75</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>ESCP_MinotaurPlayerTribe</li> 
+					</factionDefs>
+				</li>
+			</startingColonists>
+			
+		</pawnKindSettings>
+	</AlienRace.RaceSettings>
+
+</Defs>

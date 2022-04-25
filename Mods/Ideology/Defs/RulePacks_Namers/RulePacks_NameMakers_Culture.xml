@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Minotaur -->
+
+  <RulePackDef>
+    <defName>ESCP_LeaderTitleMaker_Minotaur</defName>
+    <include>
+      <li>LeaderTitleMaker_GlobalStructure</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li> <!-- ignore all meme nouns, tribals always use a culture noun -->
+
+        <li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+        <li>cultureLeaderAdjective->strong</li>
+        <li>cultureLeaderAdjective->mighty</li>
+        <li>cultureLeaderAdjective->vengeful</li>
+        <li>cultureLeaderAdjective->boastful</li>
+
+        <li>cultureLeaderNoun->Alpha</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>ESCP_NamerDeity_Minotaur</defName>
+	<include>
+      <li>NamerDeityGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[MinotaurGods]</li>
+      </rulesStrings>
+	  <rulesFiles>
+        <li>MinotaurGods->ESCP_MinotaurNames/MinotaurGods</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--__________ Facation Base __________-->
+
+  <!-- Tribal -->
+
+  <FactionDef ParentName="ESCP_FactionBase" Name="ESCP_MinotaurTribeBase" Abstract="True">
+    <leaderTitle>Alpha</leaderTitle>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+	  <startingCountAtWorldCreation>0</startingCountAtWorldCreation>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canStageAttacks>true</canStageAttacks>
+    <factionIconPath>World/WorldObjects/Expanding/ESCP_MinotaurSettlement</factionIconPath>
+    <allowedCultures Inherit="False">
+		<li>ESCP_Minotaur</li>
+	  </allowedCultures>
+    <!-- Don't enable unless there are actually backstories -->
+		
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>ESCP_MinotaurBackstory</li>
+			</categories>
+			<commonality>1</commonality>
+		  </li>
+		</backstoryFilters>
+		
+    <caravanTraderKinds>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+    </baseTraderKinds>
+    <raidLootMaker>ESCP_MinotaurTribeRaidLootMaker</raidLootMaker>
+    <pawnGroupMakers>
+      <li>
+        <!-- Combat Melee -->
+        <kindDef>Combat</kindDef>
+
+        <options>
+          <ESCP_Minotaur_Warrior>20</ESCP_Minotaur_Warrior>
+        </options>
+      </li>
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+
+        <options>
+          <ESCP_Minotaur_Warrior>20</ESCP_Minotaur_Warrior>
+          <ESCP_Minotaur_Tribesman>20</ESCP_Minotaur_Tribesman>
+          <ESCP_Minotaur_Alpha>1</ESCP_Minotaur_Alpha>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <ESCP_Minotaur_Warrior>20</ESCP_Minotaur_Warrior>
+          <ESCP_Minotaur_Tribesman>20</ESCP_Minotaur_Tribesman>
+          <ESCP_Minotaur_Alpha>1</ESCP_Minotaur_Alpha>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <ESCP_Minotaur_Tribesman>1</ESCP_Minotaur_Tribesman>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <ESCP_Minotaur_Tribesman>1</ESCP_Minotaur_Tribesman>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <ESCP_Minotaur_Tribesman>1</ESCP_Minotaur_Tribesman>
+        </options>
+      </li>
+    </pawnGroupMakers>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+  </FactionDef>
+
+  <ThingSetMakerDef>
+    <defName>ESCP_MinotaurTribeRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+            <li>Jade</li>
+            <li>MedicineHerbal</li>
+            <li>Pemmican</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+  
+  <!--__________ Minotaur Faction Defs __________-->
+
+  <!-- Minotaur Tribes -->
+
+  <FactionDef ParentName="ESCP_MinotaurTribeBase">
+    <defName>ESCP_MinotaurTribeRough</defName>
+    <label>Minotaur Tribes</label>
+    <fixedName>Minotaur Tribes</fixedName>
+    <leaderTitle>Alpha</leaderTitle>
+    <structureMemeWeights>
+      <ESCP_Structure_OriginDivinesEight MayRequire="Ludeon.RimWorld.Ideology">999</ESCP_Structure_OriginDivinesEight>
+    </structureMemeWeights>
+	  <description>A collection of Minotaur Tribes</description>
+    <modExtensions>
+      <li Class="ESCP_RaceTools.SettlementPreference">
+        <chance>0.6</chance>
+        <useTemperatureRange>true</useTemperatureRange>
+        <temperatureRangeMin>-10</temperatureRangeMin>
+        <temperatureRangeMax>45</temperatureRangeMax>
+        <useSwampinessRange>true</useSwampinessRange>
+        <swampinessRangeMin>0.0</swampinessRangeMin>
+        <swampinessRangeMax>0.8</swampinessRangeMax>
+        <IgnoreBiomeSelectionWeight>false</IgnoreBiomeSelectionWeight>
+      </li>
+    </modExtensions>
+	  <colorSpectrum>
+      <li>(160, 82, 45)</li>
+    </colorSpectrum>
+    <factionIconPath>World/WorldObjects/Expanding/ESCP_Minotaur_Ruin</factionIconPath>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+    </disallowedMemes>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+    </disallowedPrecepts>
+    <settlementNameMaker>ESCP_NamerSettlementMinotaurTribes</settlementNameMaker>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+    <naturalEnemy>true</naturalEnemy>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>40</configurationListOrderPriority>
+    <pawnGroupMakers>
+      <li>
+        <!-- Combat Melee -->
+        <kindDef>Combat</kindDef>
+
+        <options>
+          <ESCP_Minotaur_Warrior>20</ESCP_Minotaur_Warrior>
+          <ESCP_Minotaur_Alpha>1</ESCP_Minotaur_Alpha>
+        </options>
+      </li>
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+
+        <options>
+          <ESCP_Minotaur_Warrior>20</ESCP_Minotaur_Warrior>
+          <ESCP_Minotaur_Tribesman>20</ESCP_Minotaur_Tribesman>
+          <ESCP_Minotaur_Alpha>1</ESCP_Minotaur_Alpha>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <ESCP_Minotaur_Warrior>20</ESCP_Minotaur_Warrior>
+          <ESCP_Minotaur_Tribesman>20</ESCP_Minotaur_Tribesman>
+          <ESCP_Minotaur_Alpha>1</ESCP_Minotaur_Alpha>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <ESCP_Minotaur_Tribesman>1</ESCP_Minotaur_Tribesman>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <ESCP_Minotaur_Tribesman>1</ESCP_Minotaur_Tribesman>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <ESCP_Minotaur_Tribesman>1</ESCP_Minotaur_Tribesman>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+  
+  <!-- Minotaur Raiders -->
+
+  <FactionDef ParentName="ESCP_MinotaurTribeBase">
+    <defName>ESCP_MinotaurTribeSavage</defName>
+    <label>Minotaur Raiders</label>
+    <fixedName>Minotaur Raiders</fixedName>
+    <leaderTitle>Alpha</leaderTitle>
+    <structureMemeWeights>
+      <ESCP_Structure_OriginDivinesEight MayRequire="Ludeon.RimWorld.Ideology">999</ESCP_Structure_OriginDivinesEight>
+    </structureMemeWeights>
+	  <description>d</description>
+    <modExtensions>
+      <li Class="ESCP_RaceTools.SettlementPreference">
+        <chance>0.6</chance>
+        <useTemperatureRange>true</useTemperatureRange>
+        <temperatureRangeMin>-10</temperatureRangeMin>
+        <temperatureRangeMax>45</temperatureRangeMax>
+        <useSwampinessRange>true</useSwampinessRange>
+        <swampinessRangeMin>0.0</swampinessRangeMin>
+        <swampinessRangeMax>0.8</swampinessRangeMax>
+        <IgnoreBiomeSelectionWeight>false</IgnoreBiomeSelectionWeight>
+      </li>
+    </modExtensions>
+	  <colorSpectrum>
+      <li>(1, 0, 0)</li>
+    </colorSpectrum>
+    <factionIconPath>World/WorldObjects/Expanding/ESCP_Minotaur_Ruin</factionIconPath>
+    <permanentEnemy>true</permanentEnemy>
+    <settlementNameMaker>ESCP_NamerSettlementMinotaurTribes</settlementNameMaker>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+    </requiredMemes>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+    </disallowedPrecepts>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>60</configurationListOrderPriority>
+    <pawnGroupMakers>
+      <li>
+        <!-- Combat Melee -->
+        <kindDef>Combat</kindDef>
+
+        <options>
+          <ESCP_Minotaur_Warrior>20</ESCP_Minotaur_Warrior>
+          <ESCP_Minotaur_Alpha>1</ESCP_Minotaur_Alpha>
+        </options>
+      </li>
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+
+        <options>
+          <ESCP_Minotaur_Warrior>20</ESCP_Minotaur_Warrior>
+          <ESCP_Minotaur_Tribesman>20</ESCP_Minotaur_Tribesman>
+          <ESCP_Minotaur_Alpha>1</ESCP_Minotaur_Alpha>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <ESCP_Minotaur_Warrior>20</ESCP_Minotaur_Warrior>
+          <ESCP_Minotaur_Tribesman>20</ESCP_Minotaur_Tribesman>
+          <ESCP_Minotaur_Alpha>1</ESCP_Minotaur_Alpha>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <ESCP_Minotaur_Tribesman>1</ESCP_Minotaur_Tribesman>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <ESCP_Minotaur_Tribesman>1</ESCP_Minotaur_Tribesman>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <ESCP_Minotaur_Tribesman>1</ESCP_Minotaur_Tribesman>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+</Defs>

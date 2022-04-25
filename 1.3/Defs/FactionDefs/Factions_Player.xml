@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--__________ Minotaur Player Factions __________-->
+	
+	<!-- Player Tribal -->
+
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>ESCP_MinotaurPlayerTribe</defName>
+		<label>New Minotaur Tribe</label>
+		<description>A small Minotaur tribe.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>Minotaur</pawnSingular>
+		<pawnsPlural>Minotaur Tribesman</pawnsPlural>
+		<basicMemberKind>ESCP_Minotaur_Tribesman</basicMemberKind>
+		<techLevel>Neolithic</techLevel>
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>ESCP_MinotaurBackstory</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_Minotaur_Ruin</factionIconPath>
+		<disallowedMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+		</disallowedPrecepts>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<allowedCultures>
+			<li>ESCP_Minotaur</li>
+		</allowedCultures>
+		<geneticVariance>1</geneticVariance>
+		<forageabilityFactor>1.7</forageabilityFactor>
+		<startingResearchTags>
+		  <li>TribalStart</li>
+		  <li>ESCP_MinotaurStart_Tribal</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+		  <li>TribalStart</li>
+		  <li>TribalStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+		  <thingDefs>
+			<li>Cloth</li>
+		  </thingDefs>
+		</apparelStuffFilter>
+		<recipePrerequisiteTags>
+		  <li>Tribal</li>
+		</recipePrerequisiteTags>
+	</FactionDef>
+
+</Defs>

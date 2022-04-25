@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--__________ Tutorial Child __________-->
+
+	<!-- Base Backstories for children spawn -->
+
+	<AlienRace.BackstoryDef Name="Tutorial_ChildBackstoryBase" Abstract="True">
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>AdultBackstoryOne</li>
+		  	<li>AdultBackstoryTwo</li>
+		  	<li>AdultBackstoryThree</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+    
+	<!-- Minotaur Tribal Child -->
+
+    <AlienRace.BackstoryDef>
+		<defName>ESCP_Minotaur_TibalChild</defName>
+		<title>Minotaur tribal child</title>
+		<titleShort>Tribal child</titleShort>
+		<baseDescription>[PAWN_nameDef] is of the minotaur tribes and camps in the hills located near ruins of the Alessian Empire.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<spawnCategories>
+		  <li>ESCP_MinotaurChildBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Construction</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>1</amount>
+			</li>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<disallowedTraits>
+		</disallowedTraits>
+		<workDisables>
+		</workDisables>
+	</AlienRace.BackstoryDef>         
+
+</Defs>

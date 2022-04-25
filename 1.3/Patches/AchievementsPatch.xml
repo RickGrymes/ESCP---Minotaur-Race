@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Achievements Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<AchievementsExpanded.AchievementTabDef>
+							<defName>ESCP_AchievementsTab</defName>
+							<label>ESCP</label>
+						</AchievementsExpanded.AchievementTabDef>
+						
+						<AchievementsExpanded.Reward_MapIncident>
+							<defName>ESCP_RewardMinotaurJoins</defName>
+							<label>Tribal Minotaur Joins</label>
+							<tab>ESCP_AchievementsTab</tab>
+							
+							<cost>150</cost>
+							<incident>ESCP_MinotaurJoins</incident>
+						</AchievementsExpanded.Reward_MapIncident>
+						
+						<!-- Achievements-->
+
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_MinotaurSlayer</defName>
+							<label>Bull Fighting</label>
+							<description>Slay 20 Minotaurs</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundMinotaur</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KillTracker">
+								<raceDef>ESCP_MinotaurRace</raceDef>
+								<count>20</count>
+							</tracker>
+
+							<texPath>Achievements/ESCP_MinotaurSlayer</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_MinotaurTribeDestroyer</defName>
+							<label>Taking Back The Ruins</label>
+							<description>Destroy 3 tribes belonging to the Minotaur Raider</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundMinotaur</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.SettlementDefeatTracker">
+								<def>ESCP_MinotaurTribeSavage</def>
+								<count>3</count>
+							</tracker>
+
+							<texPath>Achievements/ESCP_MinotaurTribeDestroyer</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_AchievementMinotaurColonists</defName>
+							<label>A New Race has Risen</label>
+							<description>Have 12 Minotaurs in your colony at the same time</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundMinotaur</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.RaceDefTracker">
+								<raceDefs>
+									<li>
+										<key>ESCP_MinotaurRace</key>
+										<value>12</value>
+									</li>
+								</raceDefs>
+							</tracker>
+
+							<texPath>Achievements/ESCP_AchievementMinotaurColonists</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_AchievementMinotaurNamedBelharza</defName>
+							<label>Return of the First Born</label>
+							<description>Recruit a minotaur with the name Belharza</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundMinotaur</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="Mashed_VanillaAchievementsExpanded.PawnNamedTracker">
+								<key>ESCP_MinotaurRace</key>
+								<firstName>Belharza</firstName>
+							</tracker>
+
+							<texPath>Achievements/ESCP_AchievementMinotaurNamedBelharza</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+
