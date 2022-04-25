@@ -319,6 +319,8 @@
 					<li MayRequire="Ludeon.RimWorld.Ideology">PsychicArchotechEmanator_Major</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">PsychicArchotechEmanator_Grand</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">PsychicArchotechEmanator_Core</li>
+					<!-- Vanilla -->
+					<li>AteWithoutTable</li>
 				</cannotReceiveThoughts>
 			</thoughtSettings>
 			

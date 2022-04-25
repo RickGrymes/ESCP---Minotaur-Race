@@ -42,7 +42,7 @@
 								<count>20</count>
 							</tracker>
 
-							<texPath>Achievements/ESCP_MinotaurSlayer</texPath>
+							<texPath>Achievements/ESCP_AchievementBackgroundMinotaur</texPath>
 							<points>25</points>
 						</AchievementsExpanded.AchievementDef>
 						
@@ -57,7 +57,7 @@
 								<count>3</count>
 							</tracker>
 
-							<texPath>Achievements/ESCP_MinotaurTribeDestroyer</texPath>
+							<texPath>Achievements/ESCP_AchievementBackgroundMinotaur</texPath>
 							<points>15</points>
 						</AchievementsExpanded.AchievementDef>
 						
@@ -76,7 +76,7 @@
 								</raceDefs>
 							</tracker>
 
-							<texPath>Achievements/ESCP_AchievementMinotaurColonists</texPath>
+							<texPath>Achievements/ESCP_AchievementMinotaurColony</texPath>
 							<points>25</points>
 						</AchievementsExpanded.AchievementDef>
 						
@@ -91,8 +91,8 @@
 								<firstName>Belharza</firstName>
 							</tracker>
 
-							<texPath>Achievements/ESCP_AchievementMinotaurNamedBelharza</texPath>
-							<points>25</points>
+							<texPath>Achievements/ESCP_AchievementMinotaurEmperorBorn</texPath>
+							<points>75</points>
 						</AchievementsExpanded.AchievementDef>
 						
 					</value>
