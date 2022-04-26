@@ -28,9 +28,10 @@
 			<!-- <li>ESCP_Minotaur_Apparel</li> -->
 		</apparelTags>
 		<weaponTags>
+			<li>MedievalMeleeDecent</li>
       		<li>MedievalMeleeBasic</li>
 		</weaponTags>
-		<apparelMoney>350~600</apparelMoney>
+		<apparelMoney>200~300</apparelMoney>
 		<weaponMoney>500~500</weaponMoney>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<techHediffsChance>0</techHediffsChance>
@@ -72,11 +73,12 @@
 			<!-- <li>ESCP_Minotaur_Apparel</li> -->
 		</apparelTags>
 		<weaponTags>
+			<li>MedievalMeleeDecent</li>
       		<li>MedievalMeleeBasic</li>
       		<li>MedievalMeleeAdvanced</li>
 		</weaponTags>
 		<apparelMoney>350~600</apparelMoney>
-		<weaponMoney>500~500</weaponMoney>
+		<weaponMoney>500~1000</weaponMoney>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<techHediffsChance>0</techHediffsChance>
 		<techHediffsMoney>
@@ -118,8 +120,10 @@
 			<!-- <li>ESCP_Minotaur_Apparel</li> -->
 		</apparelTags>
 		<weaponTags>
+			<li>MedievalMeleeDecent</li>
       		<li>MedievalMeleeBasic</li>
       		<li>MedievalMeleeAdvanced</li>
+      		<li>NeolithicMeleeDestructive</li>
 		</weaponTags>
 		<apparelMoney>350~600</apparelMoney>
 		<weaponMoney>500~1000</weaponMoney>

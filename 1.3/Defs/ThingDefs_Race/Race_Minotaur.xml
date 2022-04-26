@@ -9,7 +9,7 @@
 		<description>A man-bull beast race found in Cyrodiil. The minotaurs have had a long and difficult timeline in Tamriel and are a rare sight to see among the Imperial province.</description>
 
 		<statBases>
-			  <MarketValue>5000</MarketValue>
+			  <MarketValue>4000</MarketValue>
 			  <MoveSpeed>4.2</MoveSpeed>
 			  <ComfyTemperatureMin>12</ComfyTemperatureMin>
 			  <ComfyTemperatureMax>26</ComfyTemperatureMax>
