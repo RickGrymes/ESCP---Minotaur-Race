@@ -22,7 +22,7 @@
 			</li>
 			<li>
 				<defName>Melee</defName>
-				<amount>2</amount>
+				<amount>7</amount>
 			</li>
 		</skillGains>
 		<forcedTraits>
@@ -30,6 +30,8 @@
 		<disallowedTraits>
 		</disallowedTraits>
 		<workDisables>
+			<li>Social</li>
+			<li>Intellectual</li>
 			<li>Animals</li>
 			<li>Caring</li>
 		</workDisables>
@@ -52,16 +54,18 @@
 		<skillGains>
 			<li>
 				<defName>Plants</defName>
-				<amount>3</amount>
+				<amount>1</amount>
 			</li>
 			<li>
-				<defName>Mining</defName>
-				<amount>2</amount>
+				<defName>Melee</defName>
+				<amount>5</amount>
 			</li>
 		</skillGains>
 		<disallowedTraits>
 		</disallowedTraits>
 		<workDisables>
+			<li>Social</li>
+			<li>Intellectual</li>
 		</workDisables>
 		<forcedItems>
 		</forcedItems>
@@ -86,11 +90,15 @@
 		<skillGains>
 			<li>
 				<defName>Crafting</defName>
-				<amount>3</amount>
+				<amount>1</amount>
 			</li>
 			<li>
 				<defName>Construction</defName>
 				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>3</amount>
 			</li>
 		</skillGains>
 		<forcedTraits>
@@ -98,6 +106,8 @@
 		<disallowedTraits>
 		</disallowedTraits>
 		<workDisables>
+			<li>Social</li>
+			<li>Intellectual</li>
 		</workDisables>
 		<forcedItems>
 		</forcedItems>
@@ -120,7 +130,7 @@
 		<skillGains>
 			<li>
 				<defName>Melee</defName>
-				<amount>6</amount>
+				<amount>9</amount>
 			</li>
 		</skillGains>
 		<forcedTraits>

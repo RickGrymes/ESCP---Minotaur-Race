@@ -49,6 +49,8 @@
 		<disallowedTraits>
 		</disallowedTraits>
 		<workDisables>
+			<li>Social</li>
+			<li>Intellectual</li>
 		</workDisables>
 	</AlienRace.BackstoryDef>         
 

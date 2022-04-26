@@ -17,6 +17,7 @@
 			  <MentalBreakThreshold>0.50</MentalBreakThreshold>
 			  <RoyalFavorValue>1</RoyalFavorValue>
 			  <CarryingCapacity>125</CarryingCapacity>
+			  <PainShockThreshold>1.8</PainShockThreshold>
 		</statBases>
 
 		<tools>
