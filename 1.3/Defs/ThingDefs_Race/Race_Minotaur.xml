@@ -16,6 +16,7 @@
 			  <SocialImpact>-1.9</SocialImpact>
 			  <MentalBreakThreshold>0.50</MentalBreakThreshold>
 			  <RoyalFavorValue>1</RoyalFavorValue>
+			  <CarryingCapacity>125</CarryingCapacity>
 		</statBases>
 
 		<tools>
